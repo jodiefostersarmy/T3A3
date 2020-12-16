@@ -11,4 +11,4 @@ class User(db.Model):                                                           
     profile = db.relationship("Profile", backref=backref("user", uselist=False))      # Creating the relationship to the profile table
 
     def __repr__(self):                                                               # When printing the model we will see its email attribute
-        return f"<User {self.email}>"
+        return f"<User {self.id}>"
