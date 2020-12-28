@@ -6,11 +6,11 @@ from flask_bcrypt import Bcrypt                             # Hashing package
 from flask_jwt_extended import JWTManager                   # Retrieves information form JWT
 from flask_migrate import Migrate                           # Package to handle migrations
 
-db = SQLAlchemy()                                           # New instance of SQLAlchemym named db
-ma = Marshmallow()                                          # New instance of marshmallow named ma. This is for serialization
-bcrypt = Bcrypt()                                           # New instance of Bcrypt, Hashing package
-jwt = JWTManager()                                          # New instance of JWT Manager
-migrate = Migrate()                                         # Makes new instance of migrate
+db = SQLAlchemy()
+ma = Marshmallow()
+bcrypt = Bcrypt()
+jwt = JWTManager()
+migrate = Migrate()
 
 def create_app():
     from dotenv import load_dotenv                          # Package to access environment variables
