@@ -7,4 +7,4 @@ class Query(db.Model):
     user_id = db.Column(db.Integer, nullable=False, unique=True)                       # user id column, string andit must be unique
 
     def __repr__(self):                                                               # When printing the model we will see its email attribute
-        return f"<User {self.id}>"
+        return f"<Query {self.id}>"

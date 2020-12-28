@@ -1,16 +1,16 @@
-from main import ma                                                   # Import the serialization object from main
-from models.Profile import Profile                                    # Importign the Profile model
-from marshmallow.validate import Length                               # Import the length class that will allow us to validate the length of the string 
-from schemas.UserSchema import UserSchema                             # User schema               
+from main import ma
+from models.Profile import Profile
+from marshmallow.validate import Length
+from schemas.UserSchema import UserSchema
 
-class ProfileSchema(ma.SQLAlchemyAutoSchema):                         # Generates Schema automatically
+class ProfileSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
-        model = Profile                                               # Generate Schema using the Profile Model
+        model = Profile
 
-    username = ma.String(required=True, validate=Length(min=1))       # username is required and the minimum length is 1
-    firstname = ma.String(required=True, validate=Length(min=1))      # first_name is required and the minimum length is 1
-    lastname = ma.String(required=True, validate=Length(min=1))       # last_name is required and the minimum length is 1
-    user = ma.Nested(UserSchema)                                      # Nesting the user schema in the profile Schema
+    username = ma.String(required=True, validate=Length(min=1))
+    firstname = ma.String(required=True, validate=Length(min=1))
+    lastname = ma.String(required=True, validate=Length(min=1))
+    user = ma.Nested(UserSchema)
 
-profile_schema = ProfileSchema()                                      # Schema for a single profile
-profiles_schema = ProfileSchema(many=True)                            # Schema for multiple profiles    
+profile_schema = ProfileSchema()
+profiles_schema = ProfileSchema(many=True)
