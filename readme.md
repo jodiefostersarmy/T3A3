@@ -28,3 +28,9 @@
 - [ ] 
 - [ ] 
 - [ ] 
+
+
+## Report Questions
+
+Q: How can we handle cross-site request forgery (CSRF), and is this a threat to our app? In what instance would it be? 
+Q: Is the CSRF the same as a JWT token to stop an outside form being submitted to our servers with malicious code?

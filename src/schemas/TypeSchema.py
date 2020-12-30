@@ -8,5 +8,5 @@ class TypeSchema(ma.SQLAlchemyAutoSchema):
 
     type_name = ma.String(validate=OneOf(["image", "video", "album"]))
 
-type_schema = TypeSchema()                                             # Schema for a single type
-types_schema = TypeSchema(many=True)                                   # Schema for multiple types    
+type_schema = TypeSchema()
+types_schema = TypeSchema(many=True)
