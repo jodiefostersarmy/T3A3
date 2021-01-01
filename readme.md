@@ -1,3 +1,10 @@
+## Report
+
+#### R2 - Produces a professional report:
+_**That provides an analysis of privacy and security concerns relating to a system**_
+
+
+
 ## Why?
 **User story #1:** As a user, I want to filter search results, so that I can find more specific relevent content.
 
@@ -20,14 +27,7 @@
 - Main: explore page will contain images of random hashtags
 - search bar
 
-## Roadmap
-- [ ] Set up EC2, DB, RDS, VPC
-- [ ] create application layer interface for CRUD resource
-- [ ] create authentication mechanism to verify users
-- [ ] database to store user hashtag searches
-- [ ] 
-- [ ] 
-- [ ] 
+
 
 
 ## Report Questions
