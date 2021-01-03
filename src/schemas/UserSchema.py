@@ -1,14 +1,14 @@
-from main import ma                                                     # Import the serialization object from main
-from models.User import User                                            # Importign the User model
-from marshmallow.validate import Length                                 # Import the length class that will allow us to validate the length of the string 
+from main import ma
+from models.User import User
+from marshmallow.validate import Length
 
-class UserSchema(ma.SQLAlchemyAutoSchema):                              # Generates Schema automatically
+class UserSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
-        model = User                                                    # Generate Schema using the User Model
-        load_only = ["password"]                                        # This will load the password but it wont send it to the front end
+        model = User
+        load_only = ["password"]
 
-    email = ma.String(required=True, validate=Length(min=4))            # The email is required and must be at least 6 chars long
-    password = ma.String(required=True, validate=Length(min=6))         # The email is required and must be at least 6 chars long
+    email = ma.String(required=True, validate=Length(min=4))
+    password = ma.String(required=True, validate=Length(min=6))
 
 
 user_schema = UserSchema()

@@ -42,4 +42,4 @@ def seed_db():
         db.session.add(profile)                                                 # Add the profile to the session
 
     db.session.commit()                                                         # Commit the session to the database
-    print("Tables seeded")                                                      # Print a message to let the user know they 
+    print("Tables seeded")
