@@ -1,36 +1,26 @@
-## Report
+# T3A3
 
-#### R2 - Produces a professional report:
-_**That provides an analysis of privacy and security concerns relating to a system**_
+After a published case study for Instagram and their tech stack, I noticed a feature that could be implemented that would possibly provide extra user experience to their application. This repository is the study of the potential infrastructure for the feature of having a two-level search function, allowing explicit hashtag search functionality to increase or decrease the hardness or softness of search results.
 
+### Installation
 
+### Usage
 
-## Why?
-**User story #1:** As a user, I want to filter search results, so that I can find more specific relevent content.
+### Data Structure
 
-**User story #2:**  As a business, we want to use more targeted hashtags, so that local users can find our products/profile easily.
+### Features
 
-**User story #3:** As part of the Facebook ad team, we would like to connect more users with businesses, so that we can monetise the hashtag feature.
+### Pages
 
-### Stakeholders
+### Migration
 
-- users - access to public interface
-- developers - access to MVC for maintence and deployment
+### Tech Stack
 
-## Goals
+### Professional Obligations
 
-- Provide deeper hashtag search functionality.
-- Allows users to filter their searches and return hard search results.
+Professional, ethical and legal obligations have been outlined in [this report here.](/docs/obligations.md)
+### Security
 
-## Application Views
+An analysis of security and privacy concerns have been outlined in [this report here.](/docs/security.md)
 
-- Main: explore page will contain images of random hashtags
-- search bar
-
-
-
-
-## Report Questions
-
-Q: How can we handle cross-site request forgery (CSRF), and is this a threat to our app? In what instance would it be? 
-Q: Is the CSRF the same as a JWT token to stop an outside form being submitted to our servers with malicious code?
+### CI/CD
